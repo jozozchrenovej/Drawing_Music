@@ -27,9 +27,28 @@
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
+  <br>
+
+  <!-- Trying the Tone.js library -->
+
+  <button id="play-button">Hello Tone.js</button>
+
+    <script src="./node_modules/tone/build/Tone.js"></script>
+    <script>
+        const synth = new Tone.Synth().toDestination();
+
+        const playButton = document.getElementById("play-button");
+
+        playButton.addEventListener('click', () => {
+            synth.triggerAttackRelease('A3', '4n');
+        });
+    </script>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
