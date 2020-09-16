@@ -17,6 +17,31 @@ html {
   line-height: 1.4;
 }
 
+h1 {
+  font-family: 'Amatic SC', cursive;
+  color: Chocolate;
+}
+
+.hero {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+p {
+  border: 2px solid black;
+}
+
+/* Menu*/
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -247,6 +272,8 @@ textarea {
   img {
     page-break-inside: avoid;
   }
+
+  
 
   p,
   h2,

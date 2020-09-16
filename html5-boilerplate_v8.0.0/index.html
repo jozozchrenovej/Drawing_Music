@@ -11,6 +11,10 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -18,52 +22,66 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="nav">
+      <h2>Menu</h2>
+      <nav>
+        <ul>
+          <li>Game</li>
+          <li>Methodology</li>
+          <li>About This Project</li>
+        </ul>
+      </nav>
+    </div>
   <!-- Add your site or application content here -->
-  <h1>Drawing Music</h1>
-  <h2>A Simple Tool for Learning the Concept of Western Notation</h2>
-  <p>A short description of how to start the app and what can you do with it.</p>
-  <br>
+    <div class="main">
+      <h1>Drawing Music</h1>
+      <h2>A Simple Tool for Learning the Concept of Western Notation</h2>
+      <p>A short description of how to start the app and what can you do with it.</p>
+      <br>
 
-  <!-- Trying the Tone.js library -->
+      <!-- Trying the Tone.js library -->
 
-  <button id="play-button">Hello Tone.js</button>
+      <button id="play-button">Hello Tone.js</button>
 
-    <script src="./node_modules/tone/build/Tone.js"></script>
-    <script>
-        const synth = new Tone.Synth().toDestination();
+        <script src="./node_modules/tone/build/Tone.js"></script>
+        <script>
+            const synth = new Tone.Synth().toDestination();
 
-        const playButton = document.getElementById("play-button");
+            const playButton = document.getElementById("play-button");
 
-        playButton.addEventListener('click', () => {
-            synth.triggerAttackRelease('A3', '4n');
-        });
-
-
-
-       
-
-  
-    </script>
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+            playButton.addEventListener('click', () => {
+                synth.triggerAttackRelease('A3', '4n');
+            });
 
 
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+           
+
+      
+        </script>
+
+      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+
+
+
+      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+      <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </div>
+  </div>
 </body>
 
 </html>
